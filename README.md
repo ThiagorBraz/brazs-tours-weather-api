@@ -13,11 +13,10 @@ using Entity Framework and follows standard REST conventions.
 
 ## Features
 
-- RESTful endpoints to retrieve weather forecast data
+- RESTful endpoints to retrieve weather forecast data by location
 - Database integration via Entity Framework
-- WeatherForecast model with Location, Date, Condition 
-  and Temperature fields
-- JSON data format for API responses
+- 80 weather forecast records across 5 Irish destinations and 
+  multiple dates included as seed data
 
 ## Technologies Used
 
@@ -33,16 +32,27 @@ The WeatherForecast entity includes:
 - Id — unique identifier
 - Location — forecast location
 - Date — forecast date
-- Condition — weather condition description
-- Temperature — temperature value
+- Condition — weather condition (Sunny, Rainy, Cloudy, Windy, 
+  Foggy and Stormy)
+- Temperature — temperature value in Celsius
+
+## Database
+
+The file `T-SQL_APIBrazsToursWeatherDB.sql` contains the full 
+database schema and seed data for this API, including 80 weather 
+forecast records for:
+- Wicklow Mountains
+- Cliffs of Moher
+- Giants Causeway
+- Malahide Castle
+- Newgrange
+
+To restore the database:
+1. Open SQL Server Management Studio (SSMS)
+2. Run the script `T-SQL_APIBrazsToursWeatherDB.sql`
+3. Update the connection string in Web.config if needed
 
 ## Academic Context
 
 Developed at Atlantic Technological University (ATU), Sligo — 
 BSc (Hons) Computer Science, 2nd Semester, Web Design Module.
-
-## Note
-
-This API requires a local SQL Server Express instance to run. 
-Connection string and database configuration are defined in 
-Web.config.
