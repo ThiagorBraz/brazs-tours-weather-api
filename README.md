@@ -55,4 +55,4 @@ To restore the database:
 ## Academic Context
 
 Developed at Atlantic Technological University (ATU), Sligo — 
-BSc (Hons) Computer Science, 2nd Semester, Web Design Module.
+Higher Diploma in Computer Science, 2nd Semester, Web Design Module.
